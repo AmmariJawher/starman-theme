@@ -15,18 +15,14 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item">
-                Examples
-              </a>
-              <a class="navbar-item">
-                Sign Up
-              </a>
               <span class="navbar-item">
-                <a class="button is-primary is-inverted">
-                  <span class="icon">
-                    <i class="far fa-user-circle"></i>
-                  </span>
-                  <span>Log in</span>
+                <a class="button is-primary is-inverted is-radiusless">
+                  <span>LOG IN</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-primary is-radiusless">
+                  <span>SIGN UP</span>
                 </a>
               </span>
             </div>
@@ -35,13 +31,13 @@
       </nav>
     </div>
 
-    <div class="hero-body">
+    <div class="hero-body" id="hero-body-pad">
       <div class="container">
-        <div class="box">
+              <h1 class="title has-text-white has-text-weight-bold">Find The Perfect Services for you.</h1>
+        <div class="box is-radiusless">
            <div class="media-content">
-              <h1 class="title has-text-black">Find The Perfect Services for you.</h1>
               <div class="field-body">
-                <div class="field">
+                <div class="field is-marginless">
                   <div class="control is-expanded">
                     <div class="select is-fullwidth">
                       <select name="country">
@@ -62,8 +58,8 @@
                   </div>
                 </div>
                 <div class="field is-grouped">
-                  <div class="control is-expanded">
-                    <div class="select is-fullwidth">
+                  <div class="control is-expanded is-marginless">
+                    <div class="select is-fullwidth is-disabled">
                       <select name="country">
                         <option value="Argentina">Argentina</option>
                         <option value="Bolivia">Bolivia</option>
@@ -80,11 +76,9 @@
                       </select>
                     </div>
                   </div>
-                  <p class="control">
-                    <a class="button is-info">
-                      Search
-                    </a>
-                  </p>
+                      <p class="control">
+                        <a class="button is-primary is-radiusless" id="button-wide">SEARCH</a>
+                      </p>
                 </div>
               </div>
             </div>
@@ -102,7 +96,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+#button-wide {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 500;
+}
+
 .bg-img {
   background-image: url("../assets/img/hero-bg-img.jpg") ;
   background-position: center center;
