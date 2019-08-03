@@ -1,22 +1,23 @@
 <template>
   <div id="app">
+    <font-awesome-icon icon="user-secret" />
     <Hero/>
     <ClientsList/>
-    <img src="./assets/logo.png">
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Hero from './components/Hero'
 import ClientsList from './components/ClientsList'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Hero,
     ClientsList,
-    HelloWorld
+    Footer
   }
 }
 </script>
@@ -28,25 +29,16 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-$purple: #033090;
-$pink: #033090;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
+$dark-blue: #033090;
 // Update Bulma's global variables
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
+$primary: $dark-blue;
 $widescreen-enabled: trye;
 $fullhd-enabled: false;
 $border: white;
-$box-shadow: 0 16px 40px rgba(0,0,0,0.25) !default;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
 $control-border-width: 1px;
+$input-border-color: transparent;
 $input-border-color: transparent;
 $input-shadow: none;
 

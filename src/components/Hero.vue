@@ -33,7 +33,7 @@
 
     <div class="hero-body" id="hero-body-pad">
       <div class="container">
-              <h1 class="title has-text-white has-text-weight-bold">Find The Perfect Services for you.</h1>
+        <h1 class="title has-text-white is-2 has-text-weight-bold">Find The Perfect Services for you.</h1>
         <div class="box is-radiusless">
            <div class="media-content">
               <div class="field-body">
