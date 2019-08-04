@@ -36,11 +36,28 @@ $widescreen-enabled: trye;
 $fullhd-enabled: false;
 $border: white;
 
+// Utilites/Controls
+$control-height: 3.5em;
+
+// Form/Shared
+$input-radius: 0;
+
 // Update some of Bulma's component variables
 $control-border-width: 1px;
 $input-border-color: transparent;
 $input-border-color: transparent;
 $input-shadow: none;
+
+// Classes
+.hero-body {
+  padding-bottom: 9rem;
+  padding-top: 5rem !important;
+}
+
+// Costume Classes
+.stand-height {
+  height: 2.25em !important;
+}
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";

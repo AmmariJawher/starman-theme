@@ -16,12 +16,12 @@
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-primary is-inverted is-radiusless">
+                <a class="button is-primary is-inverted stand-height is-radiusless">
                   <span>LOG IN</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-primary is-radiusless">
+                <a class="button is-primary stand-height is-radiusless">
                   <span>SIGN UP</span>
                 </a>
               </span>
@@ -34,13 +34,13 @@
     <div class="hero-body" id="hero-body-pad">
       <div class="container">
         <h1 class="title has-text-white is-2 has-text-weight-bold">Find The Perfect Services for you.</h1>
-        <div class="box is-radiusless">
+        <div class="bo is-radiusless">
            <div class="media-content">
               <div class="field-body">
                 <div class="field is-marginless">
                   <div class="control is-expanded">
                     <div class="select is-fullwidth">
-                      <select name="country">
+                      <select name="country cst-height">
                         <option value="Argentina">Argentina</option>
                         <option value="Bolivia">Bolivia</option>
                         <option value="Brazil">Brazil</option>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="field is-grouped">
                   <div class="control is-expanded is-marginless">
-                    <div class="select is-fullwidth is-disabled">
+                    <div class="select is-fullwidth">
                       <select name="country">
                         <option value="Argentina">Argentina</option>
                         <option value="Bolivia">Bolivia</option>
