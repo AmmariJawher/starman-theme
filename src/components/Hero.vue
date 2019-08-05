@@ -88,7 +88,7 @@
                     </div>
                   </div>
                       <p class="control">
-                        <a class="button is-primary is-radiusless" id="button-wide">SEARCH</a>
+                        <a class="button is-primary is-radiusless button-wide">SEARCH</a>
                       </p>
                 </div>
               </div>
@@ -108,12 +108,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#button-wide {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-weight: 500;
-}
-
 .bg-img {
   background-image: url("../assets/img/home_mechanic3_slider_bg.jpg") ;
   background-position: bottom center;

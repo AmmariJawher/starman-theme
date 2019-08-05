@@ -4,6 +4,8 @@
     <Hero/>
     <TopHightlights/>
     <Explore/>
+    <PopularServices/>
+    <Join/>
     <Footer/>
   </div>
 </template>
@@ -12,6 +14,8 @@
 import Hero from './components/Hero'
 import TopHightlights from './components/TopHightlights'
 import Explore from './components/Explore'
+import PopularServices from './components/PopularServices'
+import Join from './components/Join'
 import ClientsList from './components/ClientsList'
 import Footer from './components/Footer'
 
@@ -21,6 +25,8 @@ export default {
     Hero,
     TopHightlights,
     Explore,
+    PopularServices,
+    Join,
     ClientsList,
     Footer
   }
@@ -62,6 +68,11 @@ $input-shadow: none;
 // Costume Classes
 .stand-height {
   height: 2.25em !important;
+}
+.button-wide {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  font-weight: 500 !important;
 }
 
 // Import only what you need from Bulma
