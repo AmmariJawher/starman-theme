@@ -7,6 +7,17 @@
             <a class="navbar-item">
               <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
             </a>
+            <!--
+            Search bar: Font-awsome icon won't show up.
+            <span class="navbar-item">
+              <p class="control has-icons-left">
+                <input class="input is-small" type="text" placeholder="search">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </span>
+              </p>
+            </span>
+            -->
             <span class="navbar-burger burger" data-target="navbarMenuHeroA">
               <span></span>
               <span></span>
@@ -104,8 +115,8 @@ export default {
 }
 
 .bg-img {
-  background-image: url("../assets/img/hero-bg-img.jpg") ;
-  background-position: center center;
+  background-image: url("../assets/img/home_mechanic3_slider_bg.jpg") ;
+  background-position: bottom center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;

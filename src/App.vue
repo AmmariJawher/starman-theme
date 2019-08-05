@@ -2,13 +2,16 @@
   <div id="app">
     <font-awesome-icon icon="user-secret" />
     <Hero/>
-    <ClientsList/>
+    <TopHightlights/>
+    <Explore/>
     <Footer/>
   </div>
 </template>
 
 <script>
 import Hero from './components/Hero'
+import TopHightlights from './components/TopHightlights'
+import Explore from './components/Explore'
 import ClientsList from './components/ClientsList'
 import Footer from './components/Footer'
 
@@ -16,6 +19,8 @@ export default {
   name: 'App',
   components: {
     Hero,
+    TopHightlights,
+    Explore,
     ClientsList,
     Footer
   }
