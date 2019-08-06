@@ -2,34 +2,20 @@
   <div id="app">
     <font-awesome-icon icon="user-secret" />
     <Navbar/>
-    <TopHightlights/>
-    <Explore/>
-    <PopularServices/>
-    <Join/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import TopHightlights from './components/TopHightlights'
-import Explore from './components/Explore'
-import PopularServices from './components/PopularServices'
-import Join from './components/Join'
-import ClientsList from './components/ClientsList'
 import Footer from './components/Footer'
+import Home from './components/Home'
 
 export default {
   name: 'App',
   components: {
-    Hero,
     Navbar,
-    TopHightlights,
-    Explore,
-    PopularServices,
-    Join,
-    ClientsList,
+    Home,
     Footer
   }
 }

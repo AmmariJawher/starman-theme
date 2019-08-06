@@ -92,8 +92,8 @@
 </template>
 
 <script>
-import LoginModal from './LoginModal'
-import SignupModal from './SignupModal'
+import LoginModal from '../LoginModal'
+import SignupModal from '../SignupModal'
 
 export default {
   name: 'Hero',
@@ -115,7 +115,7 @@ export default {
 
 // Costume Classes
 .bg-img {
-  background-image: url("../assets/img/home_mechanic3_slider_bg.jpg") ;
+  background-image: url("../../assets/img/home_mechanic3_slider_bg.jpg") ;
   background-position: bottom center;
   background-repeat:  no-repeat;
   background-attachment: fixed;

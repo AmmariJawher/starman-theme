@@ -1,22 +1,11 @@
 <template>
-  <section class="">
-    <nav class="navbar is-primary">
+  <section class="is-fixed">
+    <nav class="navbar has-background-white">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
-            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
           </a>
-          <!--
-          Search bar: Font-awsome icon won't show up.
-          <span class="navbar-item">
-            <p class="control has-icons-left">
-              <input class="input is-small" type="text" placeholder="search">
-              <span class="icon is-small is-left">
-                <i class="fas fa-search" aria-hidden="true"></i>
-              </span>
-            </p>
-          </span>
-          -->
           <span class="navbar-burger burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
@@ -25,21 +14,18 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <span class="navbar-item">
-              <a class="button is-primary is-inverted stand-height is-radiusless">
-                <span>LOG IN</span>
-              </a>
-            </span>
-            <span class="navbar-item">
-              <a class="button is-primary is-inverted stand-height is-radiusless">
-                <span>SIGN UP</span>
-              </a>
-            </span>
+            <a class="navbar-item has-text-primary">
+              Become a Seller
+            </a>
+            <a class="navbar-item is-primary">
+              Log in
+            </a>
+            <SignupModal/>
           </div>
         </div>
       </div>
     </nav>
-    <div class="bg-color-primary">
+    <div class="has-padding">
         <div class="media-content">
           <div class="field-body">
             <div class="field">
@@ -82,7 +68,7 @@
                 </div>
               </div>
                 <p class="control">
-                  <a class="button is-primary is-inverted is-radiusless button-wide">SEARCH</a>
+                  <a class="button is-primary is-radiusless button-wide is-outlined">SEARCH</a>
                 </p>
               </div>
             </div>
@@ -95,27 +81,46 @@
 </template>
 
 <script>
+import LoginModal from './LoginModal'
+import SignupModal from './SignupModal'
+
 export default {
-  name: 'Navbar',
+  name: 'Hero',
+  components: {
+    LoginModal,
+    SignupModal
+  },
   data () {
   }
 }
 </script>
 
 <style lang="scss" scoped>
+// Set your brand colors
+$dark-blue: #033090;
+// Update Bulma's global variables
+$primary: $dark-blue;
+
 // Utilites/Controls
 $control-height: 2.5em;
 
+// Form/Shared
+$input-radius: 0;
+
 // Costume Classes
-.bg-color-primary {
-  background: #033090;
+.has-padding {
   padding: 10px 55px;
-};
-.bg-color-secondary {
-  background: #033090;
-  padding: 10px 55px;
+  box-shadow: -4px -28px 5px 30px rgba(0,0,0,0.09);
 };
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
 </style>
