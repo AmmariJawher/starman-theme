@@ -2,6 +2,7 @@
   <div id="app">
     <font-awesome-icon icon="user-secret" />
     <Navbar/>
+    <SearchResults/>
     <Footer/>
   </div>
 </template>
@@ -10,12 +11,14 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import SearchResults from './components/SearchResults'
 
 export default {
   name: 'App',
   components: {
     Navbar,
     Home,
+    SearchResults,
     Footer
   }
 }
