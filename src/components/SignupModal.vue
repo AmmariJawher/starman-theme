@@ -1,17 +1,29 @@
 <template>
   <div>
     <span class="navbar-item">
-      <a class="button is-primary is-inverted stand-height is-radiusless" @click="previewModal = true">
-        <span>LOG IN</span>
+      <a class="button is-primary stand-height is-radiusless" @click="previewModal = !previewModal">
+        <span>SIGN UP</span>
       </a>
     </span>
-    <div class="modal is-active" v-if="previewModal" @click="showModal = true">
+    <div class="modal is-active" v-if="previewModal">
       <div class="modal-background"></div>
       <div class="modal-content has-background-white has-padding">
         <div class="field">
           <label class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="Email Address" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Username" value="">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -34,23 +46,22 @@
         </div>
         <div class="field">
           <div class="control">
-            <button class="button is-primary is-radiusless is-fullwidth has-text-weight-bold">Submit</button>
+            <button class="button is-primary is-radiusless is-fullwidth has-text-weight-bold">Sign up</button>
           </div>
           <br/>
-          <p class="has-text-centred has-text-weight-medium"><a>Forget password?</a></p>
           <hr>
-          <p class="has-text-centred">Don’t have an account? <a class="has-text-weight-bold">Sign up</a></p>
-
+          <p class="has-text-centred">Already have an account? <a class="has-text-weight-bold">Login</a></p>
         </div>
       </div>
       <button class="modal-close is-large" aria-label="close" @click="previewModal = !previewModal"></button>
     </div>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: 'LoginModal',
+  name: 'SignupModal',
   data () {
     return {
       previewModal: 'false'

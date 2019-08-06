@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <font-awesome-icon icon="user-secret" />
-    <Hero/>
+    <Navbar/>
     <TopHightlights/>
     <Explore/>
     <PopularServices/>
@@ -12,6 +12,7 @@
 
 <script>
 import Hero from './components/Hero'
+import Navbar from './components/Navbar'
 import TopHightlights from './components/TopHightlights'
 import Explore from './components/Explore'
 import PopularServices from './components/PopularServices'
@@ -23,6 +24,7 @@ export default {
   name: 'App',
   components: {
     Hero,
+    Navbar,
     TopHightlights,
     Explore,
     PopularServices,

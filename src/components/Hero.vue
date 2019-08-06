@@ -26,16 +26,8 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted stand-height is-radiusless">
-                  <span>LOG IN</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-primary stand-height is-radiusless">
-                  <span>SIGN UP</span>
-                </a>
-              </span>
+              <LoginModal/>
+              <SignupModal/>
             </div>
           </div>
         </div>
@@ -72,7 +64,7 @@
                   <div class="control is-expanded is-marginless">
                     <div class="select is-fullwidth">
                       <select name="country">
-                        <option value="Argentina">Argentina</option>
+                        <option value="Argentina"><span id="option">Argentina</span></option>
                         <option value="Bolivia">Bolivia</option>
                         <option value="Brazil">Brazil</option>
                         <option value="Chile">Chile</option>
@@ -100,14 +92,28 @@
 </template>
 
 <script>
+import LoginModal from './LoginModal'
+import SignupModal from './SignupModal'
+
 export default {
   name: 'Hero',
+  components: {
+    LoginModal,
+    SignupModal
+  },
   data () {
   }
 }
 </script>
 
 <style lang="scss" scoped>
+// Forms/Select
+#option {
+  margin: 3rem 3rem !important;
+  padding: 3rem 3rem !important;
+}
+
+// Costume Classes
 .bg-img {
   background-image: url("../assets/img/home_mechanic3_slider_bg.jpg") ;
   background-position: bottom center;

@@ -8,7 +8,7 @@
           <div class="card">
             <div class="card-image">
               <figure class="image is-3by4">
-                <img src="https://bulma.io/images/placeholders/480x640.png" alt="Placeholder image">
+                <img :src="service.img" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content">
@@ -33,27 +33,27 @@ export default {
       services: [
         {
           title: 'Tire replacement',
-          img: '',
+          img: 'https://bulma.io/images/placeholders/480x640.png',
           price: 'Car Mecanic'
         },
         {
           title: 'Diagnostics',
-          img: '',
+          img: 'https://bulma.io/images/placeholders/480x640.png',
           price: 'Car Mecanic'
         },
         {
           title: 'Diagnostics',
-          img: '',
+          img: 'https://bulma.io/images/placeholders/480x640.png',
           price: 'Car Mecanic'
         },
         {
           title: 'Diagnostics',
-          img: '',
+          img: 'https://bulma.io/images/placeholders/480x640.png',
           price: 'Car Mecanic'
         },
         {
           title: 'Diagnostics',
-          img: '',
+          img: 'https://bulma.io/images/placeholders/480x640.png',
           price: 'Car Mecanic'
         }
       ]
