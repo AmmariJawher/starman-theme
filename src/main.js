@@ -4,13 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import './../node_modules/bulma/css/bulma.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-library.add(fab)
-
+// Font Awesome
+library.add(faUser, faLock, faEnvelope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyAX8ib4jr1rOWBkWUiq0aQjHhtOKCtMXq0',

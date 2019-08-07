@@ -17,9 +17,7 @@
             <a class="navbar-item has-text-primary">
               Become a Seller
             </a>
-            <a class="navbar-item is-primary">
-              Log in
-            </a>
+            <LoginModal/>
             <SignupModal/>
           </div>
         </div>

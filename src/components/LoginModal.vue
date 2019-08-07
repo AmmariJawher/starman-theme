@@ -13,7 +13,7 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="Email Address" value="">
             <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+              <font-awesome-icon icon="user"/>
             </span>
             <span class="icon is-small is-right">
               <i class="fas fa-check"></i>
@@ -25,7 +25,7 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="Password" value="">
             <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+              <font-awesome-icon icon="lock"/>
             </span>
             <span class="icon is-small is-right">
               <i class="fas fa-check"></i>
