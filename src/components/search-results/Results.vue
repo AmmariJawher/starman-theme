@@ -1,6 +1,5 @@
 <template>
   <div class="">
-    <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
     <div class="columns has-text-centered has-text-weight-semibold">
       <div class="column" v-for="service in services" :key="service.id">
         <a href="">

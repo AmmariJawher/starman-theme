@@ -1,16 +1,13 @@
 <template>
   <div class="container">
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-3">
-        <div class="tile is-child box is-roundless is-boardless">
-          <Categories/>
-        </div>
+    <div class="columns">
+      <div class="column is-one-quarter is-paddingless is-radiusless">
+        <Categories/>
       </div>
-      <div class="tile is-parent">
-        <article class="tile is-child">
-            <Results/>
-        </article>
-        <br/>
+      <div class="column">
+        <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
+        <Results/>
+        <Results/>
       </div>
     </div>
   </div>
