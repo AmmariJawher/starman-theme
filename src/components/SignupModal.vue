@@ -1,11 +1,11 @@
 <template>
   <div>
     <span class="navbar-item">
-      <a class="button is-primary stand-height is-radiusless" @click="previewModal = !previewModal">
+      <a class="button is-primary stand-height is-radiusless" @click="previewModal = 'is-active'">
         <span>SIGN UP</span>
       </a>
     </span>
-    <div class="modal is-active" v-show="previewModal">
+    <div class="modal" :class="previewModal">
       <div class="modal-background"></div>
       <div class="modal-content has-background-white has-padding">
         <div class="field">
@@ -53,7 +53,7 @@
           <p class="has-text-centred">Already have an account? <a class="has-text-weight-bold">Login</a></p>
         </div>
       </div>
-      <button class="modal-close is-large" aria-label="close" @click="previewModal = !previewModal"></button>
+      <button class="modal-close is-large" aria-label="close" @click="previewModal = ''"></button>
     </div>
   </div>
 
@@ -64,7 +64,7 @@ export default {
   name: 'SignupModal',
   data () {
     return {
-      previewModal: false
+      previewModal: ''
     }
   },
   methode: {
