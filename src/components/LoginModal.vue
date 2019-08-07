@@ -53,7 +53,7 @@ export default {
   name: 'LoginModal',
   data () {
     return {
-      previewModal: 'false'
+      previewModal: false
     }
   },
   methode: {

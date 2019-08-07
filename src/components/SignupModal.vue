@@ -5,7 +5,7 @@
         <span>SIGN UP</span>
       </a>
     </span>
-    <div class="modal is-active" v-if="previewModal">
+    <div class="modal is-active" v-show="previewModal">
       <div class="modal-background"></div>
       <div class="modal-content has-background-white has-padding">
         <div class="field">
@@ -64,10 +64,13 @@ export default {
   name: 'SignupModal',
   data () {
     return {
-      previewModal: 'false'
+      previewModal: false
     }
   },
   methode: {
+    toggle (target) {
+      return !target
+    }
   }
 }
 </script>
