@@ -1,8 +1,7 @@
 <template>
   <div>
     <span class="navbar-item">
-      <a class="button is-primary is-inverted stand-height is-radiusless" @click="previewModal = 'is-active'">
-        <span>LOG IN</span>
+      <a class="button is-primary is-outlined stand-height is-radiusless" @click="previewModal = 'is-active'">        <span>LOG IN</span>
       </a>
     </span>
     <div class="modal" :class="previewModal">
@@ -39,11 +38,11 @@
           <br/>
           <p class="has-text-centred has-text-weight-medium"><a>Forget password?</a></p>
           <hr>
-          <p class="has-text-centred">Don’t have an account? <a class="has-text-weight-bold">Sign up</a></p>
+          <p class="has-text-centred">Don’t have an account? <a class="has-text-weight-bold" @click="previewModal = ''">Sign up</a></p>
 
         </div>
       </div>
-      <button class="modal-close is-large" aria-label="close" @click="previewModal = 'is-active'"></button>
+      <button class="modal-close is-large" aria-label="close" @click="previewModal = ''"></button>
     </div>
   </div>
 </template>

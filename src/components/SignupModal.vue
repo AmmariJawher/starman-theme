@@ -68,9 +68,6 @@ export default {
     }
   },
   methode: {
-    toggle (target) {
-      return !target
-    }
   }
 }
 </script>
