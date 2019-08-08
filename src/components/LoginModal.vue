@@ -10,7 +10,7 @@
         <div class="field">
           <label class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Email Address" value="">
+            <input class="input" v-bind:class="{'is-danger': errors.has('email')}" type="text" placeholder="Email Address" value="" v-model="form.email" name="email" v-validate="'required|email'">
             <span class="icon is-small is-left">
               <font-awesome-icon icon="envelope"/>
             </span>
@@ -18,11 +18,14 @@
               <i class="fas fa-check"></i>
             </span>
           </div>
+          <p class="help is-danger" v-show="errors.has('email')">
+            {{ errors.first('email') }}
+          </p>
         </div>
         <div class="field">
           <label class="label">Password</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Password" value="">
+            <input class="input" v-bind:class="{'is-danger': errors.has('password')}" type="text" placeholder="Password" value="" v-model="form.password" name="password" v-validate="'required|min:8'">
             <span class="icon is-small is-left">
               <font-awesome-icon icon="lock"/>
             </span>
@@ -30,6 +33,9 @@
               <i class="fas fa-check"></i>
             </span>
           </div>
+          <p class="help is-danger" v-show="errors.has('password')">
+            {{ errors.first('password') }}
+          </p>
         </div>
         <div class="field">
           <div class="control">
@@ -52,7 +58,11 @@ export default {
   name: 'LoginModal',
   data () {
     return {
-      previewModal: ''
+      previewModal: '',
+      form: {
+        email: '',
+        password: ''
+      }
     }
   },
   methode: {

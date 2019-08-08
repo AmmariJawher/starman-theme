@@ -4,23 +4,27 @@ import Vue from 'vue'
 import App from './App'
 import './../node_modules/bulma/css/bulma.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VeeValidate from 'vee-validate'
+
+Vue.config.productionTip = false
 
 // Font Awesome
 library.add(faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug, faSearch)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+// Google Maps
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyAX8ib4jr1rOWBkWUiq0aQjHhtOKCtMXq0',
+    key: 'AIzaSyAroVv29x_y4gdfPKjXQCLheNsGesx99rM',
     libraries: 'places' // necessary for places input
   }
 })
 
-Vue.config.productionTip = false
+// Vee validate
+Vue.use(VeeValidate)
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,7 +1,6 @@
 <template>
   <div id="app has-navbar-fixed-top">
     <Navbar/>
-    <div class="cst-padding"></div>
     <SearchResults/>
     <Footer/>
   </div>
@@ -52,7 +51,7 @@ $input-shadow: none;
 
 // Classes
 .hero-body {
-  padding-bottom: 12rem !important;
+  padding-bottom: 10rem !important;
   padding-top: 10rem !important;
 }
 
