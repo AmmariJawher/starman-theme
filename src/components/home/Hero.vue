@@ -1,43 +1,12 @@
 <template>
   <section class="hero is-medium is-bold bg-img">
     <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-            </a>
-            <!--
-            Search bar: Font-awsome icon won't show up.
-            <span class="navbar-item">
-              <p class="control has-icons-left">
-                <input class="input is-small" type="text" placeholder="search">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-search" aria-hidden="true"></i>
-                </span>
-              </p>
-            </span>
-            -->
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <LoginModal/>
-              <SignupModal/>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <!-- Use it for later -->
     </div>
-
     <div class="hero-body" id="hero-body-pad">
       <div class="container">
         <h1 class="title has-text-white is-2 has-text-weight-bold">Find The Perfect Services for you.</h1>
-        <div class="bo is-radiusless">
+        <div class="is-radiusless">
            <div class="media-content">
               <div class="field-body">
                 <div class="field is-marginless">
@@ -87,6 +56,7 @@
             </div>
         </div>
       </div>
+      <!-- Location Changer -->
     </div>
   </section>
 </template>
@@ -107,18 +77,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// Forms/Select
-#option {
-  margin: 3rem 3rem !important;
-  padding: 3rem 3rem !important;
-}
 
 // Costume Classes
 .bg-img {
   background-image: url("../../assets/img/home_mechanic3_slider_bg.jpg") ;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat:  no-repeat;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-size:  cover;
   background-color: #999;
 };

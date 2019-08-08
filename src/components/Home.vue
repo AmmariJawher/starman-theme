@@ -1,5 +1,7 @@
 <template>
   <div id="home">
+    <Navbar/>
+    <Hero/>
     <TopHightlights/>
     <Explore/>
     <PopularServices/>
@@ -9,6 +11,7 @@
 
 <script>
 import Hero from './home/Hero'
+import Navbar from './Navbar'
 import TopHightlights from './home/TopHightlights'
 import Explore from './home/Explore'
 import PopularServices from './home/PopularServices'
@@ -18,6 +21,7 @@ export default {
   name: 'Home',
   components: {
     Hero,
+    Navbar,
     TopHightlights,
     Explore,
     PopularServices,

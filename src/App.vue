@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app has-navbar-  fixed-top">
     <font-awesome-icon icon="user-secret" />
-    <Navbar/>
-    <SearchResults/>
+    <Home/>
     <Footer/>
   </div>
 </template>
@@ -52,8 +51,8 @@ $input-shadow: none;
 
 // Classes
 .hero-body {
-  padding-bottom: 9rem;
-  padding-top: 5rem !important;
+  padding-bottom: 12rem !important;
+  padding-top: 10rem !important;
 }
 
 // Costume Classes
