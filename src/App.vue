@@ -1,7 +1,8 @@
 <template>
-  <div id="app has-navbar-  fixed-top">
-    <font-awesome-icon icon="user-secret" />
-    <Home/>
+  <div id="app has-navbar-fixed-top">
+    <Navbar/>
+    <div class="cst-padding"></div>
+    <SearchResults/>
     <Footer/>
   </div>
 </template>
@@ -63,6 +64,9 @@ $input-shadow: none;
   padding-left: 50px !important;
   padding-right: 50px !important;
   font-weight: 500 !important;
+}
+.cst-padding {
+  padding-top: 10px;
 }
 
 // Import only what you need from Bulma

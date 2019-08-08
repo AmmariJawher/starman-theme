@@ -12,7 +12,7 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="Email Address" value="">
             <span class="icon is-small is-left">
-              <font-awesome-icon icon="user"/>
+              <font-awesome-icon icon="envelope"/>
             </span>
             <span class="icon is-small is-right">
               <i class="fas fa-check"></i>

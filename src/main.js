@@ -5,12 +5,12 @@ import App from './App'
 import './../node_modules/bulma/css/bulma.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 // Font Awesome
-library.add(faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug)
+library.add(faUser, faLock, faEnvelope, faMapMarkerAlt, faToolbox, faCog, faPlug, faSearch)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueGoogleMaps, {
