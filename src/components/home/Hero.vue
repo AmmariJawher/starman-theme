@@ -1,51 +1,12 @@
 <template>
   <section class="hero is-medium is-bold bg-img">
     <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-            </a>
-            <!--
-            Search bar: Font-awsome icon won't show up.
-            <span class="navbar-item">
-              <p class="control has-icons-left">
-                <input class="input is-small" type="text" placeholder="search">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-search" aria-hidden="true"></i>
-                </span>
-              </p>
-            </span>
-            -->
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted stand-height is-radiusless">
-                  <span>LOG IN</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-primary stand-height is-radiusless">
-                  <span>SIGN UP</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <!-- Use it for later -->
     </div>
-
     <div class="hero-body" id="hero-body-pad">
       <div class="container">
         <h1 class="title has-text-white is-2 has-text-weight-bold">Find The Perfect Services for you.</h1>
-        <div class="bo is-radiusless">
+        <div class="is-radiusless">
            <div class="media-content">
               <div class="field-body">
                 <div class="field is-marginless">
@@ -72,7 +33,7 @@
                   <div class="control is-expanded is-marginless">
                     <div class="select is-fullwidth">
                       <select name="country">
-                        <option value="Argentina">Argentina</option>
+                        <option value="Argentina"><span id="option">Argentina</span></option>
                         <option value="Bolivia">Bolivia</option>
                         <option value="Brazil">Brazil</option>
                         <option value="Chile">Chile</option>
@@ -95,24 +56,34 @@
             </div>
         </div>
       </div>
+      <!-- Location Changer -->
     </div>
   </section>
 </template>
 
 <script>
+import LoginModal from '../LoginModal'
+import SignupModal from '../SignupModal'
+
 export default {
   name: 'Hero',
+  components: {
+    LoginModal,
+    SignupModal
+  },
   data () {
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
+// Costume Classes
 .bg-img {
-  background-image: url("../assets/img/home_mechanic3_slider_bg.jpg") ;
-  background-position: bottom center;
+  background-image: url("../../assets/img/home_mechanic3_slider_bg.jpg") ;
+  background-position: top center;
   background-repeat:  no-repeat;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-size:  cover;
   background-color: #999;
 };

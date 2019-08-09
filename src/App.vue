@@ -1,33 +1,23 @@
 <template>
-  <div id="app">
-    <font-awesome-icon icon="user-secret" />
-    <Hero/>
-    <TopHightlights/>
-    <Explore/>
-    <PopularServices/>
-    <Join/>
+  <div id="app has-navbar-fixed-top">
+    <Navbar/>
+    <SearchResults/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Hero from './components/Hero'
-import TopHightlights from './components/TopHightlights'
-import Explore from './components/Explore'
-import PopularServices from './components/PopularServices'
-import Join from './components/Join'
-import ClientsList from './components/ClientsList'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Home from './components/Home'
+import SearchResults from './components/SearchResults'
 
 export default {
   name: 'App',
   components: {
-    Hero,
-    TopHightlights,
-    Explore,
-    PopularServices,
-    Join,
-    ClientsList,
+    Navbar,
+    Home,
+    SearchResults,
     Footer
   }
 }
@@ -61,8 +51,8 @@ $input-shadow: none;
 
 // Classes
 .hero-body {
-  padding-bottom: 9rem;
-  padding-top: 5rem !important;
+  padding-bottom: 10rem !important;
+  padding-top: 10rem !important;
 }
 
 // Costume Classes
@@ -73,6 +63,9 @@ $input-shadow: none;
   padding-left: 50px !important;
   padding-right: 50px !important;
   font-weight: 500 !important;
+}
+.cst-padding {
+  padding-top: 10px;
 }
 
 // Import only what you need from Bulma

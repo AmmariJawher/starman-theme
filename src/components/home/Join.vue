@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 .has-background {
   padding: 100px;
-  background:  url('../assets/img/mechanic5_pic12.jpg');
+  background:  url('../../assets/img/mechanic5_pic12.jpg');
   background-position: bottom center;
   background-repeat:  no-repeat;
   background-size:  cover;
