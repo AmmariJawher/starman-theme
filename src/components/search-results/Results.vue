@@ -1,31 +1,17 @@
 <template>
-  <div class="">
-    <div class="columns has-text-centered has-text-weight-semibold">
-      <div class="column" v-for="service in services" :key="service.id">
-        <a href="">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img :src="service.img" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media-content">
-                <p class="subtitle is-6 has-text-weight-medium is-capitalized has-text-grey">{{ service.gov }} . {{ service.place}}</p>
-                <p class="title is-5">{{ service.title }}</p>
-                <p class="subtitle is-6">{{ service.price }}</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+  <div  class="grid">
+    <Card :service="service" v-for="service in services" :key="service.id"/>
   </div>
 </template>
 
 <script>
+import Card from '../shared/Card'
+
 export default {
-  name: 'TopHightlights',
+  name: 'Results',
+  components: {
+    Card
+  },
   data () {
     return {
       services: [
@@ -56,7 +42,10 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
 </style>
