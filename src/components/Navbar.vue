@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar has-background-white cst-border">
+  <nav class="navbar has-background-white cst-border cst-fixed">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item">

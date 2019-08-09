@@ -1,47 +1,8 @@
 <template>
-  <nav class="navbar has-background-white cst-border">
+  <div class="has-background-white cst-border">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
-        </a>
-        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenuHeroA" class="navbar-menu">
-        <div class="navbar-start">
-          <div class="navbar-item navbar-search is-paddingless cst-none-border">
-            <div class="field fieldsearch">
-              <form action="" id="search-form">
-                <div class="field">
-                  <p class="control is-dark">
-                    <input type="//search" name="q" maxlength="500" value="" id="search" class="input"
-                      placeholder="Search" required="required">
-                  </p>
-                </div>
-              </form>
-              <div class="search-suggest" style="position:relative"></div>
-            </div>
-          </div>
-          <span class="navbar-item is-paddingless">
-            <a class="button is-primary stand-height is-radiusless" @click="previewModal = 'is-active'">
-              <font-awesome-icon icon="search" />
-            </a>
-          </span>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item has-text-primary">
-            Become a Seller
-          </a>
-          <LoginModal />
-          <SignupModal />
-        </div>
-      </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>

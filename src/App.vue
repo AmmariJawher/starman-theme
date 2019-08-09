@@ -2,7 +2,6 @@
   <div id="app has-navbar-fixed-top">
     <Navbar/>
     <SearchResults/>
-    <Footer/>
   </div>
 </template>
 
@@ -67,7 +66,6 @@ $input-shadow: none;
 .cst-padding {
   padding-top: 10px;
 }
-
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
