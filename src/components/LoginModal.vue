@@ -45,8 +45,8 @@
           <p class="has-text-centred has-text-weight-medium"><a>Forget password?</a></p>
           <hr>
           <p class="has-text-centred">Don’t have an account? <a class="has-text-weight-bold" @click="previewModal = ''">Sign up</a></p>
-
         </div>
+
       </div>
       <button class="modal-close is-large" aria-label="close" @click="previewModal = ''"></button>
     </div>

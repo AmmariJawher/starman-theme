@@ -1,14 +1,17 @@
 <template>
-  <div class="container is-fluid">
-    <div class="columns">
-      <div class="column is-two-thirds is-paddingless is-radiusless">
-        <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
-        <Results/>
-        <Results/>
-        <Pagination/>
-      </div>
-      <div class="column cst-position">
-        <Map/>
+  <div>
+      <Navbar/>
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column is-two-thirds is-paddingless is-radiusless">
+          <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
+          <Results/>
+          <Results/>
+          <Pagination/>
+        </div>
+        <div class="column cst-position">
+          <Map/>
+        </div>
       </div>
     </div>
   </div>
@@ -19,6 +22,7 @@ import Categories from './search-results/Categories'
 import Results from './search-results/Results'
 import Pagination from './search-results/Pagination'
 import Map from './search-results/Map'
+import Navbar from './Navbar'
 
 export default {
   name: 'SearchResults',
@@ -26,7 +30,8 @@ export default {
     Categories,
     Results,
     Pagination,
-    Map
+    Map,
+    Navbar
   },
   data () {
     return {
@@ -45,5 +50,9 @@ export default {
 .container {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+.is-fixed {
+  position: fixed;
+  top: 0;
 }
 </style>
