@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar has-background-white cst-border cst-fixed">
-    <div class="container">
+  <nav class="navbar has-background-white bottom-borde add-padding">
+    <div class="container is-fluid">
       <div class="navbar-brand">
         <a class="navbar-item">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
@@ -13,11 +13,11 @@
       </div>
       <div id="navbarMenuHeroA" class="navbar-menu">
         <div class="navbar-start">
-          <div class="navbar-item navbar-search is-paddingless cst-none-border">
+          <div class="navbar-item navbar-search is-paddingless none-border">
             <div class="field fieldsearch">
               <form action="" id="search-form">
                 <div class="field">
-                  <p class="control is-dark">
+                  <p class="control is-dark none-border">
                     <input type="//search" name="q" maxlength="500" value="" id="search" class="input"
                       placeholder="Search" required="required">
                   </p>
@@ -72,14 +72,14 @@ $control-height: 2.25em;
 $input-radius: 0;
 
 // Costume Classes
-.has-padding {
-  padding: 10px 55px;
-  box-shadow: -4px -28px 5px 30px rgba(0, 0, 0, 0.09);
+.add-padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.cst-border {
-  border-bottom: solid lightgray 1px;
+.bottom-border {
+  border-bottom: solid #f0f0f0 20px;
 }
-.cst-none-border {
+.none-border {
   border: none;
 }
 

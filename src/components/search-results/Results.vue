@@ -35,6 +35,48 @@ export default {
           price: '$1,250',
           gov: 'SOUSSE',
           place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
+        },
+        {
+          title: 'Villa Samira · Contemporary Thai villa above the bay',
+          img: 'https://bulma.io/images/placeholders/1280x960.png',
+          price: '$1,250',
+          gov: 'SOUSSE',
+          place: 'hirgla'
         }
       ]
     }

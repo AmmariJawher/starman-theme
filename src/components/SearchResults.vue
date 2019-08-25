@@ -1,9 +1,10 @@
 <template>
+<section>
+  <Settingbar/>
   <div class="container is-fluid">
     <div class="columns">
       <div class="column is-two-thirds is-paddingless is-radiusless">
         <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
-        <Results/>
         <Results/>
         <Pagination/>
       </div>
@@ -12,10 +13,12 @@
       </div>
     </div>
   </div>
+</section>
 </template>
 
 <script>
-import Categories from './search-results/Categories'
+import Settingbar from './search-results/Settingbar'
+// import Categories from './search-results/Categories'
 import Results from './search-results/Results'
 import Pagination from './search-results/Pagination'
 import Map from './search-results/Map'
@@ -23,7 +26,7 @@ import Map from './search-results/Map'
 export default {
   name: 'SearchResults',
   components: {
-    Categories,
+    Settingbar,
     Results,
     Pagination,
     Map

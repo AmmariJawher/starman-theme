@@ -30,6 +30,7 @@ export default {
 
 // Set your brand colors
 $dark-blue: #033090;
+$sky-line: linear-gradient(90deg, rgba(0,67,144,1) 0%, rgba(3,48,144,1) 100%);
 // Update Bulma's global variables
 $primary: $dark-blue;
 $widescreen-enabled: trye;
