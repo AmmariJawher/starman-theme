@@ -1,32 +1,48 @@
 <template>
     <div class="">
       <GmapMap class="cst-fixed"
-        :center="{lat:10, lng:10}"
-        :zoom="7"
+        :options="{
+        zoomControl: true,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false,
+        disableDefaultUi: false
+      }"
+        :center= center
+        :zoom="9"
+        :styles= styles
         map-type-id="roadmap"
         style="width: 33%; height: 85%"
       >
-        <GmapMarker
-          :key="index"
-          v-for="(m, index) in markers"
-          :position="m.position"
-          :clickable="true"
-          :draggable="true"
-          @click="center=m.position"
-        />
+        <gmap-custom-marker :marker="marker" :alignment="top">
+        <div class="map-marker">
+          <span> price </span>
+        </div>
+        <MapMarkerCrad v-if="false" style="animationtransition-delay: 3s"/>
+        </gmap-custom-marker>
       </GmapMap>
     </div>
 </template>
 
 <script>
+import GmapCustomMarker from 'vue2-gmap-custom-marker'
+import MapMarkerCrad from './MapMarkerCard'
+
 export default {
   name: 'Explore',
+  components: {
+    GmapCustomMarker,
+    MapMarkerCrad
+  },
   data () {
     return {
-      // default to Montreal to keep it simple
-      // change this to whatever makes sense
-      center: { lat: 45.508, lng: -73.587 },
-      markers: [],
+      center: { lat: 35, lng: 10.6 },
+      marker: {
+        lat: 35,
+        lng: 10.6
+      },
       places: [],
       currentPlace: null
     }
@@ -74,7 +90,15 @@ export default {
     right: 0;
   }
   #map {
-          height: 100%;  /* The height is 400 pixels */
-          width: 40%;  /* The width is the width of the web page */
-        }
+    height: 100%;  /* The height is 400 pixels */
+    width: 40%;  /* The width is the width of the web page */
+  }
+  .map-marker {
+    background: #ffffff;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
 </style>

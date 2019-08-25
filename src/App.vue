@@ -1,6 +1,5 @@
 <template>
   <div id="app has-navbar-fixed-top">
-    <Navbar/>
     <SearchResults/>
   </div>
 </template>

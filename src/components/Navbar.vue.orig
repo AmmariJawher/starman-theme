@@ -3,7 +3,7 @@
   <nav class="navbar has-background-white bottom-borde add-padding">
     <div class="container is-fluid">
 =======
-  <nav class="navbar has-background-white bottom-border add-padding is-fixed-top">
+  <nav class="navbar has-background-white cst-border is-fixed-top">
     <div class="container">
 >>>>>>> 1b62c7ea5462c569cefddee2f3410d927e083062
       <div class="navbar-brand">
@@ -22,7 +22,7 @@
             <div class="field fieldsearch">
               <form action="" id="search-form">
                 <div class="field">
-                  <p class="control is-dark">
+                  <p class="control is-dark none-border">
                     <input type="//search" name="q" maxlength="500" value="" id="search" class="input"
                       placeholder="Search" required="required">
                   </p>
