@@ -95,10 +95,19 @@ export default {
   }
   .map-marker {
     background: #ffffff;
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    border: solid grey 1px;
     font-size: 14px;
     font-weight: 600;
     padding: 5px 10px;
     border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.2s
+  }
+  .map-marker:hover {
+    color: #167dff;
+    border-color: #167dff;
+    font-size: 16px;
+    padding: auto;
+    transition-duration: 0.2s;
   }
 </style>

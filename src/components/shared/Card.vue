@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div class="card is-shadowless has-border">
   <div class="card-image">
     <figure class="image is-4by3">
       <img :src="service.img" alt="Placeholder image">
@@ -7,10 +7,10 @@
   </div>
   <div class="card-content">
     <div class="media-content">
-      <p class="subtitle is-6 has-text-weight-medium is-capitalized has-text-grey">
+      <p class="subtitle is-size-7 has-text-weight-bold is-capitalized has-text-grey">
         {{ service.gov }} . {{ service.place}}</p>
-      <p class="title is-5">{{ service.title }}</p>
-      <p class="subtitle is-6">{{ service.price }}</p>
+      <p class="title is-size-5 has-text-black-ter has-text-weight-bold">{{ service.title }}</p>
+      <p class="subtitle is-6 has-text-right">{{ service.price }}</p>
     </div>
   </div>
 </div>
@@ -28,5 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.has-border {
+  border: 1px solid #cccbcb !important;
+}
 </style>

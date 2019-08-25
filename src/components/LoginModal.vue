@@ -1,7 +1,7 @@
 <template>
   <div>
     <span class="navbar-item">
-      <a class="button is-primary is-outlined stand-height is-radiusless" @click="previewModal = 'is-active'">        <span>LOG IN</span>
+      <a class="button is-primary is-outlined has-text-weight-bold stand-height is-rounded" @click="previewModal = 'is-active'">        <span>Log In</span>
       </a>
     </span>
     <div class="modal" :class="previewModal">

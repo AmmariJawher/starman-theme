@@ -1,20 +1,8 @@
 <template>
-<<<<<<< HEAD
 <section>
-  <Settingbar/>
-  <div class="container is-fluid">
-    <div class="columns">
-      <div class="column is-two-thirds is-paddingless is-radiusless">
-        <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
-        <Results/>
-        <Pagination/>
-      </div>
-      <div class="column cst-position">
-        <Map/>
-=======
-  <div>
-      <Navbar/>
-    <div class="container is-fluid">
+    <Navbar/>
+    <SettingBar/>
+    <div class="container is-fluid has-background">
       <div class="columns">
         <div class="column is-two-thirds is-paddingless is-radiusless">
           <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
@@ -25,10 +13,8 @@
         <div class="column cst-position">
           <Map/>
         </div>
->>>>>>> 1b62c7ea5462c569cefddee2f3410d927e083062
       </div>
     </div>
-  </div>
 </section>
 </template>
 

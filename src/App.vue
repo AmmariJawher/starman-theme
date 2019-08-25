@@ -25,16 +25,18 @@ export default {
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 
 // Set your brand colors
-$dark-blue: #033090;
+$sky-blue: #167dff;
 $sky-line: linear-gradient(90deg, rgba(0,67,144,1) 0%, rgba(3,48,144,1) 100%);
 // Update Bulma's global variables
-$primary: $dark-blue;
+$primary: $sky-blue;
 $widescreen-enabled: trye;
 $fullhd-enabled: false;
 $border: white;
+$family-sans-serif: 'Oxygen', sans-serif;
+$family-primary: 'Oxygen', sans-serif;
 
 // Utilites/Controls
 $control-height: 3.5em;
@@ -45,13 +47,13 @@ $input-radius: 0;
 // Update some of Bulma's component variables
 $control-border-width: 1px;
 $input-border-color: transparent;
-$input-border-color: transparent;
 $input-shadow: none;
 
 // Classes
 .hero-body {
   padding-bottom: 10rem !important;
   padding-top: 10rem !important;
+  font-family: 'Muli', sans-serif;
 }
 
 // Costume Classes
@@ -65,6 +67,9 @@ $input-shadow: none;
 }
 .cst-padding {
   padding-top: 10px;
+}
+.round {
+  border-radius: 25px !important;
 }
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";

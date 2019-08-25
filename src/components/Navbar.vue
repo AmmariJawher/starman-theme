@@ -1,11 +1,6 @@
 <template>
-<<<<<<< HEAD
-  <nav class="navbar has-background-white bottom-borde add-padding">
+  <nav class="navbar has-background-white add-padding is-fixed-top bottom-border">
     <div class="container is-fluid">
-=======
-  <nav class="navbar has-background-white bottom-border add-padding is-fixed-top">
-    <div class="container">
->>>>>>> 1b62c7ea5462c569cefddee2f3410d927e083062
       <div class="navbar-brand">
         <a class="navbar-item">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
@@ -18,27 +13,25 @@
       </div>
       <div id="navbarMenuHeroA" class="navbar-menu">
         <div class="navbar-start">
-          <div class="navbar-item navbar-search is-paddingless none-border">
+          <div class="navbar-item navbar-search is-paddingless">
             <div class="field fieldsearch">
               <form action="" id="search-form">
                 <div class="field">
-                  <p class="control is-dark">
-                    <input type="//search" name="q" maxlength="500" value="" id="search" class="input"
+                  <p class="control is-dark has-icons-right">
+                    <input type="//search" name="q" maxlength="500" value="" id="search" class="input has-text-weight-bold"
                       placeholder="Search" required="required">
+                      <span class="icon is-small is-right">
+                        <font-awesome-icon icon="search" />
+                      </span>
                   </p>
                 </div>
               </form>
               <div class="search-suggest" style="position:relative"></div>
             </div>
           </div>
-          <span class="navbar-item is-paddingless">
-            <a class="button is-primary stand-height is-radiusless" @click="previewModal = 'is-active'">
-              <font-awesome-icon icon="search" />
-            </a>
-          </span>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item has-text-primary">
+          <a class="navbar-item has-text-weight-bold">
             Become a Seller
           </a>
           <LoginModal />
@@ -66,12 +59,14 @@ export default {
 
 <style lang="scss" scoped>
 // Set your brand colors
-$dark-blue: #033090;
+$dark-blue: #167dff;
 // Update Bulma's global variables
 $primary: $dark-blue;
 
 // Utilites/Controls
 $control-height: 2.25em;
+//$input-border-color: transparent;
+$input-shadow: none;
 
 // Form/Shared
 $input-radius: 0;
@@ -82,10 +77,8 @@ $input-radius: 0;
   padding-bottom: 5px;
 }
 .bottom-border {
-  border-bottom: solid #f0f0f0 20px;
-}
-.none-border {
   border: none;
+  border-bottom: 1px solid #cccbcb;
 }
 
 // Import only what you need from Bulma
