@@ -26,6 +26,7 @@ export default {
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 
 // Set your brand colors
 $sky-blue: #167dff;
@@ -37,6 +38,7 @@ $fullhd-enabled: false;
 $border: white;
 $family-sans-serif: 'Oxygen', sans-serif;
 $family-primary: 'Oxygen', sans-serif;
+$family-secondary: 'Roboto', sans-serif;
 
 // Utilites/Controls
 $control-height: 3.5em;

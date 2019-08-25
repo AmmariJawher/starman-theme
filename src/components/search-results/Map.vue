@@ -16,12 +16,14 @@
         map-type-id="roadmap"
         style="width: 33%; height: 85%"
       >
-        <gmap-custom-marker :marker="marker" :alignment="top">
-        <div class="map-marker">
-          <span> price </span>
+        <div v-for="marker in markers" :key="marker.id">
+          <gmap-custom-marker :marker="marker.position">
+            <div class="map-marker">
+              <span> {{ marker.price }} </span>
+            </div>
+            <MapMarkerCrad v-if="false" style="animationtransition-delay: 3s"/>
+          </gmap-custom-marker>
         </div>
-        <MapMarkerCrad v-if="false" style="animationtransition-delay: 3s"/>
-        </gmap-custom-marker>
       </GmapMap>
     </div>
 </template>
@@ -29,20 +31,48 @@
 <script>
 import GmapCustomMarker from 'vue2-gmap-custom-marker'
 import MapMarkerCrad from './MapMarkerCard'
+import MapMarker from './MapMarker'
 
 export default {
   name: 'Explore',
   components: {
     GmapCustomMarker,
-    MapMarkerCrad
+    MapMarkerCrad,
+    MapMarker
   },
   data () {
     return {
       center: { lat: 35, lng: 10.6 },
-      marker: {
-        lat: 35,
-        lng: 10.6
-      },
+      markers: [
+        {
+          position: {
+            lat: 35,
+            lng: 10.6
+          },
+          price: '150DT'
+        },
+        {
+          position: {
+            lat: 35.3,
+            lng: 10.6
+          },
+          price: '60DT'
+        },
+        {
+          position: {
+            lat: 35.2,
+            lng: 10.5
+          },
+          price: '75DT'
+        },
+        {
+          position: {
+            lat: 35.2,
+            lng: 10.2
+          },
+          price: '88DT'
+        }
+      ],
       places: [],
       currentPlace: null
     }

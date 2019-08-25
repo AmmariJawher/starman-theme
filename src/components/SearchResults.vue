@@ -5,7 +5,7 @@
     <div class="container is-fluid has-background">
       <div class="columns">
         <div class="column is-two-thirds is-paddingless is-radiusless">
-          <h2 class="title has-text-dark is-4 has-text-weight-medium">Search Results</h2>
+          <h2 class="is-family-secondary has-text-black is-size-4 has-text-weight-bold">Search Results</h2>
           <Results/>
           <Results/>
           <Pagination/>
@@ -50,11 +50,7 @@ export default {
   position: absolute;
 }
 .container {
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 20px;
-}
-.is-fixed {
-  position: fixed;
-  top: 0;
 }
 </style>
